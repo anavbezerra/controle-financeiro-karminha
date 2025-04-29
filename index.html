@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Pagamento - Karminha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Controle de Pagamento - Karminha</h1>
+            <p>Consultora Natura</p>
+        </header>
+        <main>
+            <form id="paymentForm">
+                <label for="clientName">Nome do Cliente</label>
+                <input type="text" id="clientName" placeholder="Nome do cliente" required>
+
+                <label for="productName">Nome do Produto</label>
+                <input type="text" id="productName" placeholder="Nome do produto" required>
+
+                <label for="productValue">Valor do Produto</label>
+                <input type="number" id="productValue" placeholder="Valor do produto" required step="0.01">
+
+                <label for="installments">Parcelar em (meses)</label>
+                <input type="number" id="installments" placeholder="Parcelas" min="1">
+
+                <button type="button" onclick="addProduct()">Adicionar Produto</button>
+            </form>
+
+            <section id="paymentList">
+                <h2>Clientes e Seus Produtos</h2>
+                <ul id="payments">
+                    <!-- Lista de clientes e seus produtos será gerada aqui -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

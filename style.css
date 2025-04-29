@@ -1,0 +1,221 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce6d5; /* Rosê bem suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff7043; /* Laranja claro */
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Formulário */
+form {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8e1d4; /* Rosê suave */
+}
+
+form input:focus, form select:focus {
+    border-color: #ff7043; /* Laranja claro */
+    outline: none;
+}
+
+form button {
+    background-color: #ff7043; /* Laranja claro */
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: #ff5722; /* Laranja mais escuro */
+}
+
+/* Lista de pagamentos */
+#paymentList {
+    margin-top: 40px;
+}
+
+#paymentList h2 {
+    font-size: 1.8rem;
+    color: #ff7043; /* Laranja claro */
+    margin-bottom: 20px;
+}
+
+#payments {
+    list-style-type: none;
+    padding: 0;
+}
+
+.paymentItem {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.paymentItem .clientName {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff7043; /* Laranja claro */
+}
+
+.paymentItem .products {
+    margin-top: 10px;
+}
+
+.paymentItem .product {
+    font-size: 1.1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.paymentItem .totalValue {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.paymentItem .installmentsStatus, .paymentItem .remainingValue {
+    font-size: 1rem;
+    color: #333;
+}
+
+.paymentItem .installmentsStatus {
+    margin-top: 5px;
+}
+
+.paymentItem .remainingValue {
+    margin-top: 5px;
+    color: #ffab91; /* Laranja bem claro para o valor restante */
+}
+
+.paymentItem .dueDate {
+    margin-top: 10px;
+}
+
+.paymentItem .dueDate input {
+    width: 130px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.paymentItem .dueDate select {
+    width: 90px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.paymentItem .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.paymentItem .actions button {
+    padding: 6px 12px;
+    background-color: #ff7043; /* Laranja claro */
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paymentItem .actions button:hover {
+    background-color: #ff5722; /* Laranja mais escuro */
+}
+
+.paymentItem .actions button:active {
+    transform: scale(0.98);
+}
+
+/* Para indicar pagamento */
+.paymentStatus {
+    margin-top: 10px;
+}
+
+.paymentStatus.paid {
+    color: #28a745; /* Verde para pago */
+    font-weight: bold;
+}
+
+.paymentStatus.due {
+    color: #ff7043; /* Laranja claro para a pagar */
+    font-weight: bold;
+}
+
+/* Estilo de botões pequenos */
+.smallBtn {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: #ff7043; /* Laranja claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.smallBtn:hover {
+    background-color: #ff5722; /* Laranja mais forte */
+}
+
+.smallBtn:active {
+    transform: scale(0.98);
+}
